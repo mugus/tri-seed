@@ -8,15 +8,82 @@
   <meta name="author" content="" />
   <title>Innoventyk</title>
   <!-- Bootstrap core CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/bootstrap.min.css" rel="stylesheet" />
   <!-- Fontawesome CSS -->
-  <link href="assets/css/all.css" rel="stylesheet" />
+  <link href="assets/all.css" rel="stylesheet" />
   <!-- Custom styles for this template -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/style.css" rel="stylesheet" />
 </head>
 
 <body>
   <!-- Navigation -->
+  <style>
+    @media (min-width: 760px){
+      .navbar{
+        width: 100%;
+      }
+    }
+    @media (max-width: 300px){
+      .navbar{
+        width: 80%;
+      }
+    }
+    @media (max-width: 300px){
+      .slider-main{
+        width: 100%;
+        height: 40%;
+      }
+    }
+    .bottomfooter{
+    color: rgb(53, 145, 53);
+  }
+  @media (min-width: 760px){
+      .subsbutton{
+        width: 200px;
+      }
+    }
+    @media (max-width: 300px){
+      .subsbutton{
+        width: 100px;
+      }
+    }
+
+  .flex-container {
+  display: flex;
+  flex-direction: row;
+}
+    @media (max-width: 300px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+.flex-item-1{
+  padding: 10px;
+  flex: calc(100% / 4);
+}
+.flex-item-2{
+  padding: 10px;
+  flex: calc(100% / 4);
+}
+.flex-item-3{
+  padding: 10px;
+  flex: calc(100% / 4);
+}
+.flex-item-4{
+  padding: 10px;
+  flex: calc(100% / 4);
+}
+.btn_more{
+  background-color: rgb(53, 145, 53);
+  border-radius: 6px;
+}
+.pstyle{
+  font-size: 20px;
+}
+.copy{
+  text-align: center;
+}
+  </style>
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light top-nav fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -224,18 +291,28 @@
       </div>
       <div class="col-lg-3" style="margin-right: 4%">
         <div class="card" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
-            <p class="card-text">
-              <small><span style="color: rgb(53, 145, 53)">4th January 2021</span>
-                | 8:47 AM</small>
-            </p>
-            <p class="card-text">Maize are low growing herbacelous</p>
-            <a href="#" class="btn btn-primary">Read more</a>
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">Agricultural activities for season A2021 continue in Nasho1 IS 
+                <a href="https://twitter.com/KireheDistrict?ref_src=twsrc%5Etfw">@KireheDistrict</a> 
+                <a href="https://twitter.com/RwandaEast?ref_src=twsrc%5Etfw">@RwandaEast</a>, 40ha will be used by 
+                <a href="https://twitter.com/hashtag/Tri?src=hash&amp;ref_src=twsrc%5Etfw">#Tri</a>-Seed ltd for production of Maize seeds, 
+                <a href="https://twitter.com/RwandaAgri?ref_src=twsrc%5Etfw">@RwandaAgri</a> 
+                <a href="https://twitter.com/RwandaAgriBoard?ref_src=twsrc%5Etfw">@RwandaAgriBoard</a> 
+                <a href="https://twitter.com/PSF_Rwanda?ref_src=twsrc%5Etfw">@PSF_Rwanda</a> 
+                <a href="https://twitter.com/RwandaFinance?ref_src=twsrc%5Etfw">@RwandaFinance</a> 
+                <a href="https://twitter.com/AIFRwanda?ref_src=twsrc%5Etfw">@AIFRwanda</a> 
+                <a href="https://twitter.com/USAIDRwanda?ref_src=twsrc%5Etfw">@USAIDRwanda</a> 
+                <a href="https://twitter.com/AGRAAlliance?ref_src=twsrc%5Etfw">@AGRAAlliance</a> 
+                <a href="https://t.co/QRnJD9nkzh">pic.twitter.com/QRnJD9nkzh</a></p>&mdash; HoReCo Rwanda (@HoReCo_Rw) 
+                <a href="https://twitter.com/HoReCo_Rw/status/1313008141211238402?ref_src=twsrc%5Etfw">October 5, 2020</a>
+            </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
+     
         </div>
       </div>
     </div>
+
   </div>
   <div class="container">
     <div class="row">
@@ -321,22 +398,29 @@
       <div class="col-sm-6" style="text-align: center; margin-top: 50px; padding-left: 20px">
         <form class="form-inline" action="">
           <input type="email" placeholder="Your email" name="email" style="
-                border-radius: 15px;
+                border-radius: 5px;
                 margin: 10px;
-                min-width: 300px;
+                min-width: 350px;
                 padding: 3px;
+                height: 50px;
               " />
           <input type="text" placeholder="Your Name" name="name" style="
-                border-radius: 15px;
+                border-radius: 5px;
+                background: hsl(0 0% 93%);
                 margin: 10px;
-                min-width: 300px;
+                min-width: 350px;
                 padding: 3px;
+                height: 50px;
               " />
           <button class="btn btn-sm" style="
                 background-color: rgb(53, 145, 53);
-                border-radius: 15px;
+                color: aliceblue;
+                border-radius: 5px;
                 margin: 10px;
                 padding: 3px;
+                height: 50px;
+                font-size: 23px;
+                font-weight: bold;
               " type="submit">
             Submit Now
           </button>
@@ -351,7 +435,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col">
           <div class="footer-logo">
-            <a href="#"><img src="images/footer-logo.png" alt="" /></a>
+            <a href="#"><img src="" alt="" /></a>
           </div>
         </div>
         <div class="col-lg-4 col-md-8 col-sm-8">
@@ -360,7 +444,7 @@
           <ul class="footer_ul_amrc">
             <li class="media">
               <div class="media-left">
-                <img class="img-fluid" src="images/post-img-01.jpg" alt="" />
+                <img class="img-fluid" src="" alt="" />
               </div>
               <div class="media-body">
                 <span>Location</span>
@@ -369,7 +453,7 @@
             </li>
             <li class="media">
               <div class="media-left">
-                <img class="img-fluid" src="images/post-img-02.jpg" alt="" />
+                <img class="img-fluid" src="" alt="" />
               </div>
               <div class="media-body">
                 <span>Tel</span>
@@ -378,7 +462,7 @@
             </li>
             <li class="media">
               <div class="media-left">
-                <img class="img-fluid" src="images/post-img-03.jpg" alt="" />
+                <img class="img-fluid" src="" alt="" />
               </div>
               <div class="media-body">
                 <span>Email</span>
@@ -413,12 +497,18 @@
           <!--footer_ul_amrc ends here-->
         </div>
       </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-sm-12 copy">
+        <p><span class="bottomfooter">&copy;2021</span> - TRI-Seeds Company Ltd. <span  class="bottomfooter">All Right Reserved</span></p>
+      </div>
     </div>
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
